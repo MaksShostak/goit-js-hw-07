@@ -15,8 +15,6 @@ function createGalleryMarkup(array) {
     .join("");
 }
 galleryListRef.insertAdjacentHTML("afterbegin", renderGallery);
-const imgArrayRef = galleryListRef.querySelectorAll("img");
-console.log(imgArrayRef);
 
 let gallery = new SimpleLightbox(".gallery a", {
   captions: true,
